@@ -41,6 +41,15 @@
       });
     });
   });
+  document.querySelectorAll('form[data-search]').forEach(function (f) {
+    f.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var kind = f.querySelector('input[name="kind"]:checked').value;
+      var btn = document.querySelector('[data-filter] button[data-value="' + kind + '"]');
+      if (btn) btn.click();
+      document.getElementById('homes').scrollIntoView({ behavior: 'smooth' });
+    });
+  });
   var cd = document.querySelector('[data-countdown]');
   if (cd) {
     var now = new Date();

@@ -126,7 +126,22 @@ h3{font-size:1.25rem}
 @media (max-width:560px){.header-tools .btn-sm{display:none}.brand-sub{display:none}.header-inner{gap:.75rem}.header-tools{gap:.5rem}.brand{min-width:0;flex-shrink:1}.brand-name{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.lang-switch a{min-width:1.75rem;height:1.8rem;font-size:.74rem}.menu-btn{width:40px;height:40px}.bars{top:19px}.enquiry{grid-template-columns:1fr}.contact-list li{grid-template-columns:1fr;gap:.2rem}.person{flex-direction:column}}
 
 
-.finder{background:var(--card);border:1px solid var(--line-strong);border-radius:8px;padding:2rem;box-shadow:12px 12px 0 var(--accent)}
+.finder{background:var(--card);color:var(--ink);border:1px solid var(--line-strong);border-radius:8px;padding:2rem;box-shadow:12px 12px 0 var(--accent)}
+.hero-photo-bg{position:relative;background:#132820;color:#f6f2ea;padding:clamp(4rem,9vw,7.5rem) 0 clamp(4rem,8vw,6.5rem);overflow:hidden}
+.hero-photo-bg::before{content:"";position:absolute;inset:0;background:var(--hero-img) center 40%/cover no-repeat}
+.hero-photo-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(15,34,27,.96) 0%,rgba(19,40,32,.88) 42%,rgba(19,40,32,.45) 100%)}
+.hero-photo-bg .hero-inner{position:relative;z-index:1}
+.hero-photo-bg h1{color:#fff}
+.hero-photo-bg .eyebrow{color:#e2c98d}
+.hero-photo-bg .lede{color:rgba(246,242,234,.82)}
+.hero-photo-bg .trust{color:rgba(246,242,234,.78)}
+.hero-photo-bg .ico-check{color:#e2c98d}
+.btn-light{background:#f6f2ea;color:#16241f;border-color:#f6f2ea}
+.btn-light:hover{background:#fff;border-color:#fff}
+.btn-outline-light{background:transparent;color:#f6f2ea;border-color:rgba(246,242,234,.5)}
+.btn-outline-light:hover{background:rgba(246,242,234,.1);border-color:#f6f2ea}
+.hero-photo-bg .finder{box-shadow:0 30px 80px rgba(0,0,0,.35);border-color:transparent}
+
 .finder-title{font-family:var(--font-display);font-size:1.6rem;margin-bottom:1rem}
 .lang-zh-hant .finder-title,.lang-zh-hans .finder-title,.lang-yue .finder-title{font-family:var(--font-display-zh);font-weight:600}
 .finder ul{list-style:none;display:grid;gap:.6rem}
@@ -152,6 +167,6 @@ h3{font-size:1.25rem}
 .sra-badge{margin-top:1.2rem;display:inline-flex;align-items:center;gap:.7rem;border:1px dashed rgba(255,255,255,.4);border-radius:6px;padding:.6rem .9rem}
 .sra-badge b{font-size:1.1rem;letter-spacing:.06em;color:#fff}
 .sra-badge span{font-size:.72rem;line-height:1.3;opacity:.75}
-@media (max-width:860px){.process{grid-template-columns:1fr 1fr}.finder{box-shadow:8px 8px 0 var(--accent)}}
+@media (max-width:860px){.process{grid-template-columns:1fr 1fr}.hero-photo-bg::after{background:linear-gradient(180deg,rgba(15,34,27,.92) 0%,rgba(19,40,32,.85) 100%)}}
 @media (max-width:640px){.table-wrap{overflow:visible}.fees{min-width:0}.fees thead{display:none}.fees tr{display:grid;gap:.25rem;padding:1.1rem 1.2rem;border-bottom:1px solid var(--line)}.fees tr:last-child{border-bottom:0}.fees th,.fees td{padding:0;border:0}}
 @media (max-width:560px){.process{grid-template-columns:1fr}}

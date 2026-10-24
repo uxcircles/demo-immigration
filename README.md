@@ -6,6 +6,7 @@ A four-language website (English · 繁體中文 · 廣東話 written Cantonese 
 
 - `/` English · `/zh-hant/` Traditional Chinese · `/yue/` Cantonese · `/zh-hans/` Simplified Chinese, linked with `hreflang` (the Cantonese page uses `lang="yue-Hant-HK"` and `hreflang="zh-HK"`, since Google does not support `yue` in hreflang)
 - Published fee table and SRA-style transparency information
+- Hero photo from [Pexels](https://www.pexels.com/photo/big-ben-london-during-night-time-11567961/) (free to use under the Pexels License)
 - `LegalService`, `Person` and `FAQPage` structured data
 - Plain HTML, CSS and JavaScript — no build step. Pages are `noindex` so the fictional firm does not appear in search results.
 
