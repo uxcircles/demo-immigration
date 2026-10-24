@@ -59,7 +59,8 @@ a{color:inherit}
 h1,h2,h3{font-family:var(--font-display);font-weight:var(--display-weight);line-height:1.12;color:var(--ink);letter-spacing:var(--display-tracking)}
 .lang-zh-hant h1,.lang-zh-hans h1,.lang-yue h1,.lang-zh-hant h2,.lang-zh-hans h2,.lang-yue h2,.lang-zh-hant h3,.lang-zh-hans h3,.lang-yue h3{font-family:var(--font-display-zh);letter-spacing:.02em;line-height:1.3}
 h1,h2,h3{text-wrap:balance}
-h1 .ph,h2 .ph,h3 .ph{display:inline-block}
+h1 .ph,h2 .ph,h3 .ph{display:inline-block;word-spacing:normal}
+h1:has(.ph),h2:has(.ph),h3:has(.ph){word-spacing:.45em}
 h1{font-size:clamp(2.3rem,5.2vw,4.2rem)}
 h2{font-size:clamp(1.8rem,3.4vw,2.7rem)}
 h3{font-size:1.25rem}
