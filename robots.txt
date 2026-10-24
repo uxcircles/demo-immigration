@@ -1,0 +1,3 @@
+# Design demo of a fictional firm: kept out of search results on purpose.
+User-agent: *
+Disallow:
